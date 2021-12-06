@@ -27,6 +27,7 @@ class PopViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
         
+    @objc
     func handleEdgePanGesture(gesture: UIScreenEdgePanGestureRecognizer){
         let translationX =  gesture.translation(in: view).x
         let translationBase: CGFloat = view.frame.width / 3

@@ -31,7 +31,7 @@ class ScrollTabBarController: UITabBarController {
         // Dispose of any resources that can be recreated.
     }
     
-    func handlePan(panGesture: UIPanGestureRecognizer){
+    @objc func handlePan(panGesture: UIPanGestureRecognizer){
         let translationX =  panGesture.translation(in: view).x
         let translationAbs = translationX > 0 ? translationX : -translationX
         let progress = translationAbs / view.frame.width
